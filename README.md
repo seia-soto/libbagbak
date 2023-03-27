@@ -8,7 +8,7 @@ The version will be updated as `bagbak` updates, and all thanks should be go for
 
 ----
 
-# Usage
+## Usage
 
 > **Warning** This library only supports ESM format.
 
@@ -46,25 +46,25 @@ In the output directory, you'll see the following directory structure: `{outdir}
 
 See the followings for the options:
 
-## Pulling options
+### Pulling options
 
-- **hint*** (string) The application bundle identifier. (Example: `com.8bit.bitwarden`, `com.nexon.bluearchive`)
+- **hint** (string) The application bundle identifier. (Example: `com.8bit.bitwarden`, `com.nexon.bluearchive`)
 - **outdir** (string) The output directory.
 - **useExtensions** (boolean) `true` if you want to decrypt extensions. (Optional, Default: `true`)
 - **useColdBootedApplication** (boolean) `true` if you want to kill the target application if already opened. (Optional, Default: `true`)
 
-## Exporting as IPA
+### Exporting as IPA
 
 The IPA file format is basically same as `zip`.
 You can use `adm-zip` for zipping on Node.JS.
 
 We won't handle zipping it on here to make the library portable.
 
-# Development
+## Development
 
 We match the original `bagbak` version and use submodules for code access.
 See [`scripts/build.sh`](scripts/build.sh) for more information how libbagbak references bagbak's code.
 
-# License
+## License
 
 The license of this project is same with the original repository (bagbak), and distributed under MIT license.
